@@ -12,9 +12,10 @@ public class ProductJsonProcessor : IJsonProcessor
 
     public object? Process(JObject json)
     {
-        var product = json.ToObject<Product>();
+        if (!CanProcess(json)) return null;
+
         // Do something with product
 
-        return product;
+        return json.ToObject<Product>();
     }
 }

@@ -8,8 +8,6 @@ namespace dynamic_json.Controllers;
 [Route("[controller]")]
 public class JsonController : ControllerBase
 {
-    
-    // "{\"Name\":\"John Doe\",\"Email\":\"john.doe@example.com\"}"
     private readonly IEnumerable<IJsonProcessor> _processors;
 
     public JsonController(IEnumerable<IJsonProcessor> processors)
