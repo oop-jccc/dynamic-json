@@ -17,7 +17,7 @@ public class JsonController : ControllerBase
 
     // POST: /Json/{contextId}
     [HttpPost()]
-    public ActionResult Set([FromBody] string jsonString)
+    public ActionResult Post([FromBody] string jsonString)
     {
         return Ok(ProcessJsonString(jsonString));
     }
