@@ -15,7 +15,6 @@ public class JsonController : ControllerBase
         _processors = processors;
     }
 
-    // POST: /Json/{contextId}
     [HttpPost()]
     public ActionResult Post([FromBody] string jsonString)
     {
