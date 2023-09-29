@@ -5,8 +5,6 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dynamic-json", "dynamic-json.csproj", "{3C88B600-5EAD-475D-A873-CB0015083A4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dynamic-json-tests", "..\work\dynamic-json-poc\tests\dynamic-json-tests.csproj", "{CCF63597-7706-4AE5-A7BD-B09B09B0D582}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{3C88B600-5EAD-475D-A873-CB0015083A4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C88B600-5EAD-475D-A873-CB0015083A4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C88B600-5EAD-475D-A873-CB0015083A4F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CCF63597-7706-4AE5-A7BD-B09B09B0D582}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CCF63597-7706-4AE5-A7BD-B09B09B0D582}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CCF63597-7706-4AE5-A7BD-B09B09B0D582}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CCF63597-7706-4AE5-A7BD-B09B09B0D582}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
