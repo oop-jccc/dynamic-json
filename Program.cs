@@ -16,6 +16,7 @@ namespace dynamic_json
 
             builder.Services.AddSingleton<IJsonProcessor, UserJsonProcessor>();
             builder.Services.AddSingleton<IJsonProcessor, ProductJsonProcessor>();
+            builder.Services.AddSingleton<IJsonProcessor, TodoItemProcessor>();
 
             var app = builder.Build();
 
