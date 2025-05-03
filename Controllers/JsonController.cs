@@ -24,12 +24,12 @@ public class JsonController : ControllerBase
     private object? ProcessJsonString(string jsonString)
     {
         var json = JObject.Parse(jsonString);
-        var handler = _processors.FirstOrDefault(h => h.CanProcess(json));
-        if (handler == null)
-        {
-            throw new Exception("No handler found");
-        }
 
-        return handler.Process(json);
+        var result = _processors
+            .Select(processor => processor.Process(json))
+            .FirstOrDefault(res => res != null);
+
+        return result;
+
     }
 }

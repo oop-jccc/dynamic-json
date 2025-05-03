@@ -3,18 +3,16 @@ using Newtonsoft.Json.Linq;
 
 namespace dynamic_json.JsonProcessors;
 
-public class UserJsonProcessor : IJsonProcessor
+public class UserJsonProcessor : BaseJsonProcessor<User>
 {
     // "{\"Name\":\"John Doe\",\"Email\":\"john.doe@example.com\"}"
-    public bool CanProcess(JObject json)
+    public override bool CanProcess(JObject json)
     {
         return json.ContainsKey(nameof(User.Name)) && json.ContainsKey(nameof(User.Email));
     }
 
-    public object? Process(JObject json)
+    protected override User? ProcessInternal(JObject json)
     {
-        if (!CanProcess(json)) return null;
-
         var user = json.ToObject<User>();
 
         // update user
