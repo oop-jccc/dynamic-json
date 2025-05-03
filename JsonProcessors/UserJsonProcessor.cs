@@ -18,6 +18,6 @@ public class UserJsonProcessor : IJsonProcessor
         var user = json.ToObject<User>();
 
         // update user
-        return user with { Name = "John Doe 2" };
+        return user! with { Name = "John Doe 2" };
     }
 }

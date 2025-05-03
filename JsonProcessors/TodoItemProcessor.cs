@@ -16,13 +16,9 @@ public class TodoItemProcessor : IJsonProcessor
     {
         if (!CanProcess(json)) return null;
         var todoItem = json.ToObject<TodoItem>();
-        if (todoItem == null)
-        {
-            return null;
-        }
 
         // Update IsCompleted to true
-        return todoItem with
+        return todoItem! with
         {
             IsCompleted = true
         };
