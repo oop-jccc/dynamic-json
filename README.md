@@ -1,32 +1,3 @@
-# Dynamic JSON Processing - Educational Repository
-
-This repository demonstrates the Strategy Design Pattern and SOLID principles through a JSON processing system built with ASP.NET Core.
-
-## Branch Structure
-
-This repository follows a numbered branch structure that reflects the educational progression:
-
-### 01-todo-starter-code (Default Branch)
-- **Purpose**: Starting point for students
-- **Content**: Base infrastructure with User and Product processors
-- **Missing**: TodoItem model and processor implementation
-- **Student Task**: Implement the missing TodoItem functionality
-
-### 02-todo-solution
-- **Purpose**: Complete solution for the Todo assignment
-- **Content**: Full TodoItem implementation demonstrating proper use of records and the `with` operator
-- **Learning Focus**: Strategy pattern, Open/Closed principle, immutable data structures
-
-### 03-template-method-pattern
-- **Purpose**: Advanced implementation showing Template Method pattern
-- **Content**: Refactored processors using BaseJsonProcessor abstract class
-- **Learning Focus**: Template Method pattern, inheritance, advanced OOP design
-
-### 04-exam-thumbnail-exercise
-- **Purpose**: Additional exercise for assessment
-- **Content**: Thumbnail model and processor implementation
-- **Learning Focus**: Pattern application with different data types
-
 ## Solution Branch - TodoItem Implementation Complete
 
 **⚠️ This is the solution branch containing the complete implementation of the TodoItem assignment.**
