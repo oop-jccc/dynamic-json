@@ -23,17 +23,25 @@
       ]
     }
   },
-  "forwardPorts": [5000, 5001],
+  "forwardPorts": [5000, 5001, 5299, 8080],
   "portsAttributes": {
     "5000": {
-      "label": "HTTP",
+      "label": "HTTP (ASP.NET Core)",
       "protocol": "http"
     },
     "5001": {
-      "label": "HTTPS",
+      "label": "HTTPS (ASP.NET Core)",
       "protocol": "https"
+    },
+    "5299": {
+      "label": "HTTP (Dynamic)",
+      "protocol": "http"
+    },
+    "8080": {
+      "label": "HTTP (Container Default)",
+      "protocol": "http"
     }
   },
-  "postCreateCommand": "dotnet restore dynamic-json.sln && echo 'Container setup complete!'",
+  "postCreateCommand": "dotnet restore dynamic-json.sln && echo 'Container setup complete! Run: dotnet run --launch-profile dynamic_json_codespaces'",
   "remoteUser": "vscode"
 }
