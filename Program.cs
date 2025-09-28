@@ -29,6 +29,9 @@ public static class Program
 
         app.UseAuthorization();
 
+        // Redirect root URL to Swagger UI
+        app.MapGet("/", () => Results.Redirect("/swagger"));
+
         app.MapControllers();
 
         app.Run();
