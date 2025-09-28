@@ -5,6 +5,12 @@
     "cpus": 4,
     "memory": "16gb"
   },
+  "features": {
+    "ghcr.io/devcontainers/features/dotnet:2": {
+      "version": "6.0",
+      "installUsingApt": false
+    }
+  },
   "customizations": {
     "vscode": {
       "extensions": [
@@ -22,7 +28,17 @@
       ]
     }
   },
-  "forwardPorts": [],
-  "postCreateCommand": "dotnet restore dynamic-json.sln",
+  "forwardPorts": [5000, 5001],
+  "portsAttributes": {
+    "5000": {
+      "label": "HTTP",
+      "protocol": "http"
+    },
+    "5001": {
+      "label": "HTTPS",
+      "protocol": "https"
+    }
+  },
+  "postCreateCommand": "dotnet restore dynamic-json.sln && echo 'Container setup complete!'",
   "remoteUser": "vscode"
 }
