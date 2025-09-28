@@ -5,12 +5,7 @@
     "cpus": 4,
     "memory": "16gb"
   },
-  "features": {
-    "ghcr.io/devcontainers/features/dotnet:2": {
-      "version": "6.0",
-      "installUsingApt": false
-    }
-  },
+
   "customizations": {
     "vscode": {
       "extensions": [
